@@ -1,0 +1,20 @@
+package com.cos.myiocdi;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PostController {
+
+	// Component(용도 없음), Configuration(설정파일), Service(서비스), Repository(레파지토리), Bean
+	
+	@GetMapping("/")
+	public String home() {
+		
+		@Autowired
+		private Robot robot; //DI
+
+		return "home"+robot.getName();
+	}
+}
