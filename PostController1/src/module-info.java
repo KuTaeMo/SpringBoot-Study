@@ -1,0 +1,2 @@
+module PostController1 {
+}
