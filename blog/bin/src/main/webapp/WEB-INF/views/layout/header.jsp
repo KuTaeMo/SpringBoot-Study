@@ -36,7 +36,7 @@
 				<ul class="navbar-nav">
 					<li class="nav-item active"><a class="nav-link" href="/">BLOG</a></li>
 					<li class="nav-item"><a class="nav-link" href="/post/saveForm">글쓰기</a></li>
-					<li class="nav-item"><a class="nav-link" href="/user/${principal.user.id}">회원정보보기</a></li>
+					<li class="nav-item"><a class="nav-link" href="/user/1">회원정보보기</a></li>
 					<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a></li>
 				</ul>
 			</nav>
