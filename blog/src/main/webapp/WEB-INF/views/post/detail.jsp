@@ -25,12 +25,13 @@
 
 	<!-- 댓글 시작 -->
 	<div class="card">
-		<form>
-			<div class="card-body">
-				<textarea id="reply-content" class="form-control" rows="1"></textarea>
+		<form action="/reply" method="post">
+			<input id="reply-postid" name="postId" type="hidden" value="${post.id }"/>
+			<div class="card-body">	
+				<textarea id="reply-content" name="content" class="form-control" rows="1"></textarea>
 			</div>
 			<div class="card-footer">
-				<button onClick="registerReply()" type="button" id="btn-reply-save" class="btn btn-primary">등록</button>
+				<button type="submit" id="btn-reply-save" class="btn btn-primary">등록</button>
 			</div>
 		</form>
 	</div>
@@ -58,19 +59,6 @@
 </div>
 
 <script>
-function registerReply(){
-	let content=$("#reply-contet").val();
-	
-	$.ajax({
-		type:"POST",
-		url:"/reply",
-		data:"content="+content,
-		contentType:"text/plain",
-		dataType:"json"
-	}).done(res=>{
-		
-	});
-}
 
 function deleteReply(id){
 	$.ajax({

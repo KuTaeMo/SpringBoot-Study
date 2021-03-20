@@ -2,6 +2,7 @@ package com.cos.blog.service;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -42,7 +43,10 @@ public class PostService {
 	
 	@Transactional
 	public void 글수정(int id, PostUpdateReqDto postUpdateReqDto) {
-		Post postEntity=postRepository.findById(id).get(); //영속화
+		//영속화
+		Post postEntity=postRepository.findById(id).orElseThrow(()->{
+			return new IllegalArgumentException("id를 찾을 수 없습니다.");
+		});;
 		postEntity.setContent(postUpdateReqDto.getContent());
 		postEntity.setTitle(postUpdateReqDto.getTitle());
 	}

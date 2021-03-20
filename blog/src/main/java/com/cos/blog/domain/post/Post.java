@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
 
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
 
 import com.cos.blog.domain.reply.Reply;
 import com.cos.blog.domain.user.RoleType;
@@ -66,5 +67,6 @@ public class Post {
 	@OrderBy("id desc")
 	private List<Reply> replys;
 	
+	@CreationTimestamp
 	private Timestamp createDate;
 }

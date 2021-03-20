@@ -11,8 +11,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="EUC-KR">
-<title>BLOG</title>
+<title>당근마켓</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,23 +26,24 @@
 </head>
 <body>
 
+	<!-- empty로 null이나 공백 확인 -->
 	<c:choose>
 		<c:when test="${empty principal}">
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<nav class="navbar navbar-expand-sm" style="background-color: #FFFFFF;">
 				<ul class="navbar-nav">
-					<li class="nav-item active"><a class="nav-link" href="/">BLOG</a></li>
-					<li class="nav-item"><a class="nav-link" href="/loginForm">로그인</a></li>
-					<li class="nav-item"><a class="nav-link" href="/joinForm">회원가입</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/" style="color: #FF8A3D;"><img src="${pageContext.request.contextPath}/img/carrotlogo.svg"/></a></li>
+					<li class="nav-item"><a class="nav-link" href="/loginForm" style="color: gray;">로그인</a></li>
+					<li class="nav-item"><a class="nav-link" href="/joinForm" style="color: gray;">회원가입</a></li>
 				</ul>
 			</nav>
 		</c:when>
 		<c:otherwise>
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<nav class="navbar navbar-expand-sm" style="background-color: #FFFFFF;">
 				<ul class="navbar-nav">
-					<li class="nav-item active"><a class="nav-link" href="/">BLOG</a></li>
-					<li class="nav-item"><a class="nav-link" href="/post/saveForm">글쓰기</a></li>
-					<li class="nav-item"><a class="nav-link" href="/user/${principal.user.id}">회원정보보기</a></li>
-					<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/"><img src="${pageContext.request.contextPath}/img/carrotlogo.svg"/></a></li>
+					<li class="nav-item"><a class="nav-link" href="/post/saveForm" style="color: #FF8A3D;">글쓰기</a></li>
+					<li class="nav-item"><a class="nav-link" href="/user/${principal.user.id}" style="color: #FF8A3D;">회원정보보기</a></li>
+					<li class="nav-item"><a class="nav-link" href="/logout" style="color: #FF8A3D;">로그아웃</a></li>
 				</ul>
 			</nav>
 		</c:otherwise>

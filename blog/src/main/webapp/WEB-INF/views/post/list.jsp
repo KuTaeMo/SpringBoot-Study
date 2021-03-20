@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
 <div class="container">
+	<div style="color: #ff8a3d; font-size: 30px;">물건 팔아요~!</div>
 	<c:forEach var="post" items="${posts.content}">
 		<div class="card">
 			<div class="card-body">
 			<div class="d-flex justify-content-between">
-				<h4 class="card-title">${post.title}</h4>
-				<div>작성자:${post.user.username }</div>
+
+					<h4 class="card-title">${post.title}</h4>
+					<div>작성자:${post.user.username }</div>
 			</div>
-				<a href="/post/${post.id}" class="btn btn-primary">상세보기</a>
+				<a href="/post/${post.id}" class="btn" style="background-color: #ff8a3d;">물건보기</a>
 			</div>
 		</div>
 		<br>

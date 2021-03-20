@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
-    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
-    <fullyQualifiedTypeName name="com.cos.blog.domain.RoleType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
-    <fullyQualifiedTypeName name="javax.persistence.EnumType"/>
     <fullyQualifiedTypeName name="com.cos.blog.domain.User"/>
     <fullyQualifiedTypeName name="com.cos.blog.web.auth.dto.AuthJoinReqDto"/>
     <fullyQualifiedTypeName name="com.cos.blog.service.AuthService"/>
@@ -25,8 +19,6 @@
     <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.cos.blog.service.PostService"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.cos.blog.domain.post.PostRepository"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
@@ -34,15 +26,12 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="org.springframework.security.core.annotation.AuthenticationPrincipal"/>
     <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.security.web.authentication.AuthenticationSuccessHandler"/>
     <fullyQualifiedTypeName name="org.springframework.data.web.PageableDefault"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
     <fullyQualifiedTypeName name="java.awt.print.Pageable"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-    <fullyQualifiedTypeName name="com.cos.blog.domain.post.Post"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
     <fullyQualifiedTypeName name="com.cos.blog.web.post.dto.PostSaveReqDto"/>
@@ -54,10 +43,21 @@
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="com.cos.blog.domain.user.UserRepository"/>
     <fullyQualifiedTypeName name="com.cos.blog.config.oauth.OAuth2UserInfo"/>
-    <fullyQualifiedTypeName name="com.cos.blog.domain.user.User"/>
     <fullyQualifiedTypeName name="com.cos.blog.config.oauth.OAuth2DetailsService"/>
     <fullyQualifiedTypeName name="com.cos.blog.config.auth.PrincipalDetails"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+    <fullyQualifiedTypeName name="com.cos.blog.service.PostService"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.user.User"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.post.Post"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.annotation.AuthenticationPrincipal"/>
+    <fullyQualifiedTypeName name="lombok.Builder"/>
+    <fullyQualifiedTypeName name="com.cos.blog.web.reply.dto.ReplySaveReqDto"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.reply.Reply"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+    <fullyQualifiedTypeName name="com.cos.blog.web.dto.CMRespDto"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

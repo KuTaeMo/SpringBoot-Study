@@ -23,7 +23,9 @@ public class ReplyControllerTest {
 	public CMRespDto<?> testPost(@PathVariable int id){
 		postRepository.findAll();
 		
-		Post post=postRepository.findById(id).get();
-		return new CMRespDto<>(1,post);
+		Post post=postRepository.findById(id).orElseThrow(()->{
+			return new IllegalArgumentException("id를 찾을 수 없습니다.");
+		});;
+		return new CMRespDto<>(1,null,post);
 	}
 }
