@@ -11,6 +11,7 @@
 create user 'cos'@'%' identified by 'cos1234';
 GRANT ALL PRIVILEGES ON *.* TO 'cos'@'%';
 create database cos;
+```
 
 ## 메인 화면 - 비로그인시
 ![image](https://user-images.githubusercontent.com/67215505/112586308-ecfc3400-8e3e-11eb-81eb-cce7275f1a85.png)
